@@ -1,289 +1,552 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravaku — Software personalizado</title>
-  <meta name="description" content="Desarrollo de software a la medida: gestión de gimnasios, biometría, puntos de venta, sitios web informativos y asistentes chatbot." />
+  <title>Custom Software Studio — Jorge Vargas & Miguel Ramos</title>
+  <meta name="description" content="Custom software development: gym management systems, biometric access, POS, informational websites and AI chatbots. Built for your business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="./" class="brand">
-        <span class="brand-mark">R</span>
-        Ravaku
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text" data-en="Custom Studio" data-es="Custom Studio">Custom Studio</span>
       </a>
       <nav class="nav-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="contacto/">Contacto</a>
+        <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+        <a href="#work" data-en="Work" data-es="Proyectos">Work</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <span class="eyebrow">Software a la medida</span>
-        <h1>
-          Construimos <span class="accent">software personalizado</span><br />
-          para tu negocio
-        </h1>
-        <p class="lead">
-          Desarrollamos sistemas completos: gestión de gimnasios con acceso
-          biométrico y punto de venta, sitios web informativos, portales y
-          asistentes con inteligencia artificial. Cada solución está hecha a la
-          medida de tu operación.
+  <span id="top"></span>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-eyebrow reveal" data-en="Custom Software · Since 2022" data-es="Software a la Medida · Desde 2022">Custom Software · Since 2022</div>
+          <h1 class="reveal reveal-delay-1">
+            <span data-en="Software" data-es="Software">Software</span>
+            <span class="accent" data-en="built for you" data-es="a tu medida">built for you</span>
+            <span data-en="not for the crowd." data-es="no para la masa.">not for the crowd.</span>
+          </h1>
+        </div>
+        <div class="hero-side reveal reveal-delay-2">
+          <p data-en="We build gym management systems with biometric access, informational websites, real-estate portals and AI-powered chatbots — each one tailored to the exact way your business runs." data-es="Construimos sistemas de gestión para gimnasios con acceso biométrico, sitios web informativos, portales inmobiliarios y chatbots con IA — cada uno adaptado a la forma exacta en que opera tu negocio.">
+            We build gym management systems with biometric access, informational websites, real-estate portals and AI-powered chatbots — each one tailored to the exact way your business runs.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span data-en="Start a project" data-es="Iniciar un proyecto">Start a project</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#work" class="btn btn-outline">
+              <span data-en="See work" data-es="Ver trabajo">See work</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal reveal-delay-3">
+        <div class="hero-stat">
+          <span class="num">7+</span>
+          <span class="lbl" data-en="Projects delivered" data-es="Proyectos entregados">Projects delivered</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">5</span>
+          <span class="lbl" data-en="Mexican states" data-es="Estados de México">Mexican states</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">100%</span>
+          <span class="lbl" data-en="Custom-built" data-es="Hecho a medida">Custom-built</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">2</span>
+          <span class="lbl" data-en="Founders, no middlemen" data-es="Fundadores, sin intermediarios">Founders, no middlemen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MARQUEE ============================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>
+        Gym Management <i class="marquee-dot"></i>
+        Biometric Access <i class="marquee-dot"></i>
+        Point of Sale <i class="marquee-dot"></i>
+        Websites <i class="marquee-dot"></i>
+        AI Chatbots <i class="marquee-dot"></i>
+        Real Estate Portals <i class="marquee-dot"></i>
+        Custom Backoffice <i class="marquee-dot"></i>
+      </span>
+      <span>
+        Gym Management <i class="marquee-dot"></i>
+        Biometric Access <i class="marquee-dot"></i>
+        Point of Sale <i class="marquee-dot"></i>
+        Websites <i class="marquee-dot"></i>
+        AI Chatbots <i class="marquee-dot"></i>
+        Real Estate Portals <i class="marquee-dot"></i>
+        Custom Backoffice <i class="marquee-dot"></i>
+      </span>
+    </div>
+  </div>
+
+  <!-- ============================ SERVICES ============================ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-index" data-en="01 · What we do" data-es="01 · Lo que hacemos">01 · What we do</div>
+          <h2>
+            <span data-en="One team." data-es="Un equipo.">One team.</span><br />
+            <span class="accent" data-en="Every layer." data-es="Cada capa.">Every layer.</span>
+          </h2>
+        </div>
+        <p data-en="From the biometric hardware at the entrance to the AI chatbot that greets your visitors — we cover every layer of your product." data-es="Desde el hardware biométrico en la entrada hasta el chatbot con IA que recibe a tus visitantes — cubrimos cada capa de tu producto.">
+          From the biometric hardware at the entrance to the AI chatbot that greets your visitors — we cover every layer of your product.
         </p>
-        <div class="cta-row">
-          <a href="contacto/" class="cta">Solicita una cotización</a>
-          <a href="#proyectos" class="cta cta-secondary">Ver proyectos</a>
+      </div>
+
+      <div class="services">
+        <div class="service reveal">
+          <div class="icon">🏋️</div>
+          <div>
+            <h3 data-en="Gym management" data-es="Gestión de gimnasios">Gym management</h3>
+            <p data-en="Members, memberships, renewals, revenue and staff — one panel that runs the whole floor. Field-tested in five real gyms." data-es="Miembros, membresías, renovaciones, ingresos y staff — un panel que administra todo el piso. Probado en cinco gimnasios reales.">
+              Members, memberships, renewals, revenue and staff — one panel that runs the whole floor. Field-tested in five real gyms.
+            </p>
+          </div>
+        </div>
+
+        <div class="service reveal reveal-delay-1">
+          <div class="icon">🖐️</div>
+          <div>
+            <h3 data-en="Biometric access" data-es="Acceso biométrico">Biometric access</h3>
+            <p data-en="Fingerprint-controlled magnetic locks, turnstiles and single-entry gates. Real hardware, not a demo." data-es="Chapas magnéticas, torniquetes y puertas de acceso único — controladas por huella digital. Hardware real, no una demo.">
+              Fingerprint-controlled magnetic locks, turnstiles and single-entry gates. Real hardware, not a demo.
+            </p>
+          </div>
+        </div>
+
+        <div class="service reveal">
+          <div class="icon">🧾</div>
+          <div>
+            <h3 data-en="Point of sale" data-es="Punto de venta">Point of sale</h3>
+            <p data-en="Inventory, multi-currency payments and end-of-day cash-out." data-es="Inventario, pagos multi-moneda y corte de caja al final del día.">Inventory, multi-currency payments and end-of-day cash-out.</p>
+          </div>
+        </div>
+
+        <div class="service reveal reveal-delay-1">
+          <div class="icon">🌐</div>
+          <div>
+            <h3 data-en="Websites & portals" data-es="Sitios web y portales">Websites & portals</h3>
+            <p data-en="Fast, modern, responsive. From landing pages to full real-estate catalogs." data-es="Rápidos, modernos, responsivos. Desde landing pages hasta catálogos inmobiliarios completos.">
+              Fast, modern, responsive. From landing pages to full real-estate catalogs.
+            </p>
+          </div>
+        </div>
+
+        <div class="service reveal reveal-delay-2">
+          <div class="icon">🤖</div>
+          <div>
+            <h3 data-en="AI chatbots" data-es="Chatbots con IA">AI chatbots</h3>
+            <p data-en="24/7 assistants that speak like your best salesperson — inline on your site or on WhatsApp." data-es="Asistentes 24/7 que hablan como tu mejor vendedor — en tu sitio o en WhatsApp.">
+              24/7 assistants that speak like your best salesperson — inline on your site or on WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="service reveal">
+          <div class="icon">⚙️</div>
+          <div>
+            <h3 data-en="Custom-built, end to end" data-es="Hecho a medida, de principio a fin">Custom-built, end to end</h3>
+            <p data-en="You'll talk to the founders. We scope, we design, we ship, we support. No middlemen." data-es="Hablas con los fundadores. Nosotros lo planteamos, lo diseñamos, lo entregamos y lo soportamos. Sin intermediarios.">
+              You'll talk to the founders. We scope, we design, we ship, we support. No middlemen.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="servicios">
-      <div class="container">
-        <div class="section-head">
-          <h2>Lo que hacemos</h2>
-          <p>Un solo equipo que cubre desde el hardware biométrico hasta el sitio web y el asistente que atiende a tus clientes.</p>
+  <!-- ============================ WORK ============================ -->
+  <section id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-index" data-en="02 · Selected work" data-es="02 · Trabajo seleccionado">02 · Selected work</div>
+          <h2>
+            <span data-en="Real clients." data-es="Clientes reales.">Real clients.</span><br />
+            <span class="accent" data-en="Real hardware." data-es="Hardware real.">Real hardware.</span>
+          </h2>
         </div>
-        <div class="services">
-          <div class="service">
-            <div class="icon" aria-hidden="true">🏋️</div>
-            <h3>Gestión de gimnasios</h3>
-            <p>Membresías, clientes, renovaciones y reportes en un solo panel.</p>
+        <p data-en="Seven projects shipped across Baja California Sur, Yucatán and Nuevo León. Here's what we built and where." data-es="Siete proyectos entregados entre Baja California Sur, Yucatán y Nuevo León. Esto es lo que construimos y dónde.">
+          Seven projects shipped across Baja California Sur, Yucatán and Nuevo León. Here's what we built and where.
+        </p>
+      </div>
+
+      <div class="projects">
+
+        <!-- 01. 45 Fitness POS -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="portfolio/45fitness-pos.png" alt="45 Minutes Life Fitness admin panel" />
           </div>
-          <div class="service">
-            <div class="icon" aria-hidden="true">🖐️</div>
-            <h3>Control de acceso biométrico</h3>
-            <p>Huella digital para chapas magnéticas, torniquetes y accesos exclusivos.</p>
+          <div class="project-body">
+            <span class="project-index">01</span>
+            <span class="project-loc" data-en="Los Cabos, Baja California Sur" data-es="Los Cabos, Baja California Sur">Los Cabos, Baja California Sur</span>
+            <h3>45 Minutes Life Fitness<br /><small style="font-size:0.55em;color:var(--muted);font-weight:500;letter-spacing:0" data-en="Management system" data-es="Sistema de gestión">Management system</small></h3>
+            <p class="summary" data-en="An end-to-end operations platform: biometric access, live point of sale and full backoffice — all on the same screen." data-es="Plataforma operativa de principio a fin: acceso biométrico, punto de venta en vivo y backoffice completo — todo en la misma pantalla.">
+              An end-to-end operations platform: biometric access, live point of sale and full backoffice — all on the same screen.
+            </p>
+            <ul>
+              <li data-en="Fingerprint-triggered magnetic lock" data-es="Chapa magnética con huella digital">Fingerprint-triggered magnetic lock</li>
+              <li data-en="Fingerprint-verified turnstile" data-es="Torniquete con verificación por huella">Fingerprint-verified turnstile</li>
+              <li data-en="POS with live inventory" data-es="POS con inventario en tiempo real">POS with live inventory</li>
+              <li data-en="Members, memberships, renewals" data-es="Miembros, membresías, renovaciones">Members, memberships, renewals</li>
+              <li data-en="Daily cash panel: cash, transfer, card, USD" data-es="Panel de caja diario: efectivo, transferencia, tarjeta, USD">Daily cash panel: cash, transfer, card, USD</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Biometrics</span>
+              <span class="tag">POS</span>
+              <span class="tag">Backoffice</span>
+            </div>
           </div>
-          <div class="service">
-            <div class="icon" aria-hidden="true">🧾</div>
-            <h3>Punto de venta</h3>
-            <p>POS con inventario, múltiples métodos de pago y corte de caja.</p>
+        </article>
+
+        <!-- 02. 45 Fitness Web -->
+        <article class="project reverse reveal">
+          <div class="project-media">
+            <img src="portfolio/45fitness-web.png" alt="45 Life Fitness website" />
           </div>
-          <div class="service">
-            <div class="icon" aria-hidden="true">🌐</div>
-            <h3>Sitios web informativos</h3>
-            <p>Landing pages y sitios corporativos rápidos, modernos y responsivos.</p>
+          <div class="project-body">
+            <span class="project-index">02</span>
+            <span class="project-loc">Los Cabos, Baja California Sur</span>
+            <h3>45 Life Fitness<br /><small style="font-size:0.55em;color:var(--muted);font-weight:500;letter-spacing:0" data-en="Public website" data-es="Sitio web público">Public website</small></h3>
+            <p class="summary" data-en="A modern informational site with a built-in chatbot that greets visitors 24/7 and hands off to WhatsApp." data-es="Sitio informativo moderno con un chatbot integrado que atiende visitantes 24/7 y los conecta a WhatsApp.">
+              A modern informational site with a built-in chatbot that greets visitors 24/7 and hands off to WhatsApp.
+            </p>
+            <ul>
+              <li data-en="Memberships & pricing" data-es="Membresías y precios">Memberships & pricing</li>
+              <li data-en="Location & facilities" data-es="Ubicación e instalaciones">Location & facilities</li>
+              <li data-en="Class schedules & availability" data-es="Horarios y disponibilidad de clases">Class schedules & availability</li>
+              <li data-en="Integrated AI chatbot" data-es="Chatbot con IA integrado">Integrated AI chatbot</li>
+              <li data-en="Direct WhatsApp contact" data-es="Contacto directo por WhatsApp">Direct WhatsApp contact</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Website</span>
+              <span class="tag">AI Chatbot</span>
+              <span class="tag">WhatsApp</span>
+            </div>
+            <a href="https://jorchvr.github.io/web_gym/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span data-en="Visit site" data-es="Visitar sitio">Visit site</span> →
+            </a>
           </div>
-          <div class="service">
-            <div class="icon" aria-hidden="true">🤖</div>
-            <h3>Asistentes chatbot con IA</h3>
-            <p>Atención 24/7 integrada al sitio o a WhatsApp.</p>
+        </article>
+
+        <!-- 03. PowerGym Hunucmá -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="portfolio/powergym-hunucma.png" alt="PowerGym Hunucmá" />
           </div>
-          <div class="service">
-            <div class="icon" aria-hidden="true">⚙️</div>
-            <h3>Software a la medida</h3>
-            <p>Todo desarrollado a la necesidad exacta de tu negocio.</p>
+          <div class="project-body">
+            <span class="project-index">03</span>
+            <span class="project-loc">Hunucmá, Yucatán</span>
+            <h3>PowerGym Hunucmá</h3>
+            <p class="summary" data-en="Gym management with fingerprint-only entry and integrated point of sale." data-es="Gestión de gimnasio con entrada exclusiva por huella y punto de venta integrado.">
+              Gym management with fingerprint-only entry and integrated point of sale.
+            </p>
+            <ul>
+              <li data-en="Single fingerprint-only entry" data-es="Entrada única y exclusiva por huella">Single fingerprint-only entry</li>
+              <li data-en="Members & memberships" data-es="Miembros y membresías">Members & memberships</li>
+              <li data-en="POS with inventory control" data-es="POS con control de inventario">POS with inventory control</li>
+              <li data-en="Cash & sales reports" data-es="Reportes de caja y ventas">Cash & sales reports</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Biometrics</span>
+              <span class="tag">POS</span>
+            </div>
           </div>
+        </article>
+
+        <!-- 04. PowerGym Kinchil -->
+        <article class="project reverse reveal">
+          <div class="project-media">
+            <img src="portfolio/powergym-kinchil.png" alt="PowerGym Kinchil" />
+          </div>
+          <div class="project-body">
+            <span class="project-index">04</span>
+            <span class="project-loc">Kinchil, Yucatán</span>
+            <h3>PowerGym Kinchil</h3>
+            <p class="summary" data-en="Same platform as PowerGym Hunucmá — adapted and deployed for a second location." data-es="Misma plataforma que PowerGym Hunucmá — adaptada y desplegada para una segunda sucursal.">
+              Same platform as PowerGym Hunucmá — adapted and deployed for a second location.
+            </p>
+            <ul>
+              <li data-en="Single fingerprint-only entry" data-es="Entrada única y exclusiva por huella">Single fingerprint-only entry</li>
+              <li data-en="Members & memberships" data-es="Miembros y membresías">Members & memberships</li>
+              <li data-en="POS with inventory control" data-es="POS con control de inventario">POS with inventory control</li>
+              <li data-en="Cash & sales reports" data-es="Reportes de caja y ventas">Cash & sales reports</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Biometrics</span>
+              <span class="tag">POS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05. Black Mamba -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="portfolio/blackmamba.png" alt="Black Mamba Gym" />
+          </div>
+          <div class="project-body">
+            <span class="project-index">05</span>
+            <span class="project-loc">Mérida, Yucatán</span>
+            <h3>Black Mamba Gym</h3>
+            <p class="summary" data-en="Full system for a mixed-training gym with biometric access and point of sale." data-es="Sistema completo para un gimnasio mixto con acceso biométrico y punto de venta.">
+              Full system for a mixed-training gym with biometric access and point of sale.
+            </p>
+            <ul>
+              <li data-en="Single fingerprint-only entry" data-es="Entrada única y exclusiva por huella">Single fingerprint-only entry</li>
+              <li data-en="Members & memberships" data-es="Miembros y membresías">Members & memberships</li>
+              <li data-en="POS with inventory control" data-es="POS con control de inventario">POS with inventory control</li>
+              <li data-en="Cash & sales reports" data-es="Reportes de caja y ventas">Cash & sales reports</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Biometrics</span>
+              <span class="tag">POS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06. SAARQ -->
+        <article class="project reverse reveal">
+          <div class="project-media">
+            <img src="portfolio/saarq-1.png" alt="SAARQ Real Estate" />
+          </div>
+          <div class="project-body">
+            <span class="project-index">06</span>
+            <span class="project-loc">Monterrey, Nuevo León</span>
+            <h3>SAARQ Real Estate</h3>
+            <p class="summary" data-en="A real-estate portal with a dynamic property catalog and an AI chatbot that qualifies prospects." data-es="Portal inmobiliario con catálogo dinámico de propiedades y chatbot con IA que califica prospectos.">
+              A real-estate portal with a dynamic property catalog and an AI chatbot that qualifies prospects.
+            </p>
+            <ul>
+              <li data-en="For-sale and for-rent property catalog" data-es="Catálogo de propiedades en venta y renta">For-sale and for-rent property catalog</li>
+              <li data-en="Search by type, location and price" data-es="Búsqueda por tipo, ubicación y precio">Search by type, location and price</li>
+              <li data-en="Full property fact sheets" data-es="Fichas técnicas por propiedad">Full property fact sheets</li>
+              <li data-en="AI chatbot handling first contact" data-es="Chatbot con IA en el primer contacto">AI chatbot handling first contact</li>
+              <li data-en="Direct WhatsApp and email contact" data-es="Contacto directo por WhatsApp y correo">Direct WhatsApp and email contact</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Real Estate</span>
+              <span class="tag">AI Chatbot</span>
+              <span class="tag">Portal</span>
+            </div>
+            <a href="https://saarq.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span data-en="Visit site" data-es="Visitar sitio">Visit site</span> →
+            </a>
+          </div>
+        </article>
+
+        <!-- 07. Óptima Solución -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="portfolio/optima-1.png" alt="Óptima Solución" />
+          </div>
+          <div class="project-body">
+            <span class="project-index">07</span>
+            <span class="project-loc">Mérida, Yucatán</span>
+            <h3>Óptima Solución<br /><small style="font-size:0.55em;color:var(--muted);font-weight:500;letter-spacing:0" data-en="Engineering & Architecture" data-es="Ingeniería y Arquitectura">Engineering & Architecture</small></h3>
+            <p class="summary" data-en="Corporate site for a telecom-engineering firm — with interactive project showcase and a chatbot for B2B lead qualification." data-es="Sitio corporativo para una empresa de ingeniería en telecomunicaciones — con portafolio interactivo y chatbot para calificación B2B.">
+              Corporate site for a telecom-engineering firm — with interactive project showcase and a chatbot for B2B lead qualification.
+            </p>
+            <ul>
+              <li data-en="Services and design showcase" data-es="Presentación de servicios y diseños">Services and design showcase</li>
+              <li data-en="Interactive project portfolio" data-es="Portafolio interactivo de proyectos">Interactive project portfolio</li>
+              <li data-en="Nationwide presence section" data-es="Sección de presencia nacional">Nationwide presence section</li>
+              <li data-en="Contact form + integrated chatbot" data-es="Formulario de contacto + chatbot integrado">Contact form + integrated chatbot</li>
+              <li data-en="B2B-focused design" data-es="Diseño enfocado en B2B">B2B-focused design</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Corporate</span>
+              <span class="tag">Portfolio</span>
+              <span class="tag">AI Chatbot</span>
+            </div>
+            <a href="https://jorchvr.github.io/opsolutionweb-/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span data-en="Visit site" data-es="Visitar sitio">Visit site</span> →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA BAND ============================ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div class="reveal">
+          <h2>
+            <span data-en="Got a project" data-es="¿Tienes un proyecto">Got a project</span>
+            <span class="accent" data-en="in mind?" data-es="en mente?">in mind?</span>
+          </h2>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p data-en="Tell us what you need — even if it's a rough idea. We'll help you shape it into something real." data-es="Cuéntanos qué necesitas — aunque sea una idea vaga. Te ayudamos a convertirla en algo real.">
+            Tell us what you need — even if it's a rough idea. We'll help you shape it into something real.
+          </p>
+          <a href="#contact" class="btn btn-accent">
+            <span data-en="Talk to us" data-es="Hablemos">Talk to us</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="proyectos">
-      <div class="container">
-        <div class="section-head">
-          <h2>Han confiado en nosotros</h2>
-          <p>Proyectos entregados en Los Cabos, Yucatán y Nuevo León. Aquí algunos ejemplos.</p>
+  <!-- ============================ CONTACT ============================ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-head reveal">
+          <div class="section-index" data-en="03 · Get in touch" data-es="03 · Contacto">03 · Get in touch</div>
+          <h2>
+            <span data-en="Let's" data-es="Vamos a">Let's</span>
+            <span class="accent" data-en="build" data-es="construir">build</span>
+            <span data-en="something." data-es="algo.">something.</span>
+          </h2>
+          <p data-en="Send us a message on WhatsApp — we usually reply within a few hours. Or fill the form on the right and we'll open a WhatsApp chat with the details already filled in." data-es="Escríbenos por WhatsApp — normalmente respondemos en pocas horas. O llena el formulario de la derecha y abriremos un WhatsApp con los datos ya listos.">
+            Send us a message on WhatsApp — we usually reply within a few hours. Or fill the form on the right and we'll open a WhatsApp chat with the details already filled in.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="lbl">WhatsApp</span>
+              <span class="val"><a href="https://wa.me/528128641405" target="_blank" rel="noopener noreferrer">+52 812 864 1405</a></span>
+            </div>
+            <div class="info-item">
+              <span class="lbl" data-en="Working areas" data-es="Zonas de trabajo">Working areas</span>
+              <span class="val" data-en="Mexico — remote & on-site" data-es="México — remoto y presencial">Mexico — remote & on-site</span>
+            </div>
+            <div class="info-item">
+              <span class="lbl" data-en="Founders" data-es="Fundadores">Founders</span>
+              <span class="val">Jorge Vargas · Miguel Ramos</span>
+            </div>
+          </div>
         </div>
 
-        <div class="projects">
-          <!-- 1. 45 Minutes Life Fitness Sistema -->
-          <article class="project">
-            <div class="project-media">
-              <img src="portfolio/45fitness-pos.png" alt="Panel de administración de 45 Minutes Life Fitness" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Los Cabos, Baja California Sur</span>
-              <h3>45 Minutes Life Fitness — Sistema de gestión</h3>
-              <p class="summary">Sistema integral de gestión de gimnasio con control de acceso biométrico y punto de venta en la misma plataforma.</p>
-              <ul>
-                <li>Apertura de chapa magnética por huella digital</li>
-                <li>Torniquete de acceso con verificación por huella</li>
-                <li>Punto de venta con inventario en tiempo real</li>
-                <li>Gestión de clientes, membresías y renovaciones</li>
-                <li>Panel de caja diario: efectivo, transferencia, tarjeta y dólares</li>
-                <li>Backoffice completo para administración</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Biometría</span>
-                <span class="tag">POS</span>
-                <span class="tag">Gestión de gym</span>
-                <span class="tag">Backoffice</span>
-              </div>
-            </div>
-          </article>
+        <form class="wa-form reveal reveal-delay-1" id="waForm" novalidate>
+          <div class="field">
+            <label for="f-name" data-en="Your name" data-es="Tu nombre">Your name</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="f-type" data-en="Type of project" data-es="Tipo de proyecto">Type of project</label>
+            <select id="f-type" name="type" required>
+              <option value="" data-en="Choose one…" data-es="Elige una…">Choose one…</option>
+              <option value="Gym system" data-en="Gym management system" data-es="Sistema de gestión de gimnasio">Gym management system</option>
+              <option value="Biometric access" data-en="Biometric access" data-es="Acceso biométrico">Biometric access</option>
+              <option value="POS" data-en="Point of sale" data-es="Punto de venta">Point of sale</option>
+              <option value="Website" data-en="Website" data-es="Sitio web">Website</option>
+              <option value="Chatbot" data-en="AI chatbot" data-es="Chatbot con IA">AI chatbot</option>
+              <option value="Other" data-en="Something else" data-es="Otro">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-en="Message" data-es="Mensaje">Message</label>
+            <textarea id="f-msg" name="message" required></textarea>
+          </div>
+          <button type="submit" class="wa-btn">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.004a9.87 9.87 0 01-5.03-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-en="Send via WhatsApp" data-es="Enviar por WhatsApp">Send via WhatsApp</span>
+          </button>
+        </form>
 
-          <!-- 2. 45 Life Fitness Web -->
-          <article class="project reverse">
-            <div class="project-media">
-              <img src="portfolio/45fitness-web.png" alt="Página web de 45 Life Fitness" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Los Cabos, Baja California Sur</span>
-              <h3>45 Life Fitness — Sitio web</h3>
-              <p class="summary">Sitio informativo moderno con asistente chatbot para atención al cliente 24/7.</p>
-              <ul>
-                <li>Información de membresías y precios</li>
-                <li>Ubicación e instalaciones</li>
-                <li>Horarios y disponibilidad de clases</li>
-                <li>Asistente chatbot integrado</li>
-                <li>Contacto directo por WhatsApp</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Web informativa</span>
-                <span class="tag">Chatbot IA</span>
-                <span class="tag">WhatsApp</span>
-              </div>
-              <a href="https://jorchvr.github.io/web_gym/" target="_blank" rel="noopener noreferrer" class="project-link">Visitar sitio →</a>
-            </div>
-          </article>
-
-          <!-- 3. PowerGym Hunucmá -->
-          <article class="project">
-            <div class="project-media">
-              <img src="portfolio/powergym-hunucma.png" alt="PowerGym Hunucmá" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Hunucmá, Yucatán</span>
-              <h3>PowerGym Hunucmá</h3>
-              <p class="summary">Gestión de gimnasio con acceso exclusivo por huella digital y punto de venta integrado.</p>
-              <ul>
-                <li>Entrada única y exclusiva por huella digital</li>
-                <li>Gestión de clientes y membresías</li>
-                <li>Punto de venta con control de inventario</li>
-                <li>Reportes de caja y ventas</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Biometría</span>
-                <span class="tag">POS</span>
-                <span class="tag">Gestión de gym</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 4. PowerGym Kinchil -->
-          <article class="project reverse">
-            <div class="project-media">
-              <img src="portfolio/powergym-kinchil.png" alt="PowerGym Kinchil" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Kinchil, Yucatán</span>
-              <h3>PowerGym Kinchil</h3>
-              <p class="summary">Misma plataforma que PowerGym Hunucmá, adaptada para una segunda sucursal.</p>
-              <ul>
-                <li>Entrada única y exclusiva por huella digital</li>
-                <li>Gestión de clientes y membresías</li>
-                <li>Punto de venta con control de inventario</li>
-                <li>Reportes de caja y ventas</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Biometría</span>
-                <span class="tag">POS</span>
-                <span class="tag">Gestión de gym</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 5. Black Mamba Gym -->
-          <article class="project">
-            <div class="project-media">
-              <img src="portfolio/blackmamba.png" alt="Black Mamba Gym" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Mérida, Yucatán</span>
-              <h3>Black Mamba Gym</h3>
-              <p class="summary">Sistema completo para gimnasio mixto con acceso biométrico y punto de venta.</p>
-              <ul>
-                <li>Entrada única y exclusiva por huella digital</li>
-                <li>Gestión de clientes y membresías</li>
-                <li>Punto de venta con control de inventario</li>
-                <li>Reportes de caja y ventas</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Biometría</span>
-                <span class="tag">POS</span>
-                <span class="tag">Gestión de gym</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 6. SAARQ -->
-          <article class="project reverse">
-            <div class="project-media">
-              <img src="portfolio/saarq-1.png" alt="SAARQ Bienes Raíces" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Monterrey, Nuevo León</span>
-              <h3>SAARQ Bienes Raíces</h3>
-              <p class="summary">Portal inmobiliario con catálogo de propiedades y asistente chatbot para calificar prospectos.</p>
-              <ul>
-                <li>Catálogo de propiedades en venta y renta</li>
-                <li>Búsqueda por tipo, ubicación y precio</li>
-                <li>Fichas técnicas por propiedad</li>
-                <li>Asistente chatbot para atención automatizada</li>
-                <li>Contacto directo por WhatsApp y correo</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Portal inmobiliario</span>
-                <span class="tag">Chatbot IA</span>
-                <span class="tag">Catálogo dinámico</span>
-              </div>
-              <a href="https://saarq.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visitar sitio →</a>
-            </div>
-          </article>
-
-          <!-- 7. Óptima Solución -->
-          <article class="project">
-            <div class="project-media">
-              <img src="portfolio/optima-1.png" alt="Óptima Solución" />
-            </div>
-            <div class="project-body">
-              <span class="project-loc"><span aria-hidden="true">📍</span> Mérida, Yucatán</span>
-              <h3>Óptima Solución — Ingeniería y Arquitectura</h3>
-              <p class="summary">Sitio corporativo para empresa de ingeniería en telecomunicaciones con presentación de proyectos y chatbot.</p>
-              <ul>
-                <li>Presentación de servicios y diseños</li>
-                <li>Portafolio interactivo de proyectos</li>
-                <li>Sección de presencia nacional</li>
-                <li>Formulario de contacto y chatbot integrado</li>
-                <li>Diseño enfocado en clientes B2B</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tag">Web corporativa</span>
-                <span class="tag">Portafolio</span>
-                <span class="tag">Chatbot IA</span>
-              </div>
-              <a href="https://jorchvr.github.io/opsolutionweb-/" target="_blank" rel="noopener noreferrer" class="project-link">Visitar sitio →</a>
-            </div>
-          </article>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container">
-        <div class="cta-section">
-          <h2>¿Tienes un proyecto en mente?</h2>
-          <p>Cuéntanos qué necesitas y te proponemos la solución más adecuada para tu negocio.</p>
-          <a href="contacto/" class="cta">Contactar ahora</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="container">
-      <span class="founders-label">Fundadores</span>
-      <div class="founders">Jorge Vargas · Miguel Ramos</div>
-      <div class="copyright">
-        © 2026 Ravaku. Software hecho a la medida.
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <span data-en="Software" data-es="Software">Software</span>
+            <span class="accent" data-en="that fits." data-es="que encaja.">that fits.</span>
+          </h3>
+          <p data-en="Custom software studio building gym systems, biometric access, websites and AI chatbots — from Mexico, for the world." data-es="Estudio de software a la medida que construye sistemas de gym, acceso biométrico, sitios web y chatbots con IA — desde México, para el mundo.">
+            Custom software studio building gym systems, biometric access, websites and AI chatbots — from Mexico, for the world.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigate" data-es="Navegar">Navigate</h4>
+          <ul>
+            <li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+            <li><a href="#work" data-en="Work" data-es="Proyectos">Work</a></li>
+            <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Reach us" data-es="Contáctanos">Reach us</h4>
+          <ul>
+            <li><a href="https://wa.me/528128641405" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><span data-en="Mexico · Remote & on-site" data-es="México · Remoto y presencial">Mexico · Remote & on-site</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          <span class="founders-label" data-en="Founders" data-es="Fundadores">Founders</span>
+          <span class="founders">Jorge Vargas · Miguel Ramos</span>
+        </div>
+        <div data-en="© 2026 — Custom software, built one project at a time." data-es="© 2026 — Software a la medida, un proyecto a la vez.">© 2026 — Custom software, built one project at a time.</div>
       </div>
     </div>
   </footer>
+
+  <!-- ============================ CHATBOT ============================ -->
+  <button class="chatbot-fab" id="chatFab" aria-label="Open chat">
+    <svg class="chat-icon" viewBox="0 0 24 24"><path d="M12 3C6.48 3 2 6.94 2 11.8c0 2.14.87 4.11 2.33 5.66-.09 1-.4 2.55-1.33 3.54 0 0 2.05-.16 3.86-1.32.87.29 1.79.44 2.72.5C10.2 20.87 11.1 21 12 21c5.52 0 10-3.94 10-8.8C22 6.94 17.52 3 12 3z"/></svg>
+    <svg class="close-x" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+  </button>
+
+  <div class="chatbot-panel" id="chatPanel" role="dialog" aria-label="Chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">S</div>
+      <div class="chatbot-title">
+        <strong data-en="Studio assistant" data-es="Asistente del estudio">Studio assistant</strong>
+        <small data-en="Online · Replies instantly" data-es="En línea · Responde al instante">Online · Replies instantly</small>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatMessages"></div>
+    <div class="quick-replies" id="quickReplies"></div>
+    <form class="chatbot-input" id="chatForm">
+      <input type="text" id="chatInput" data-en-placeholder="Type your question…" data-es-placeholder="Escribe tu pregunta…" placeholder="Type your question…" autocomplete="off" />
+      <button type="submit" class="chatbot-send" aria-label="Send">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
