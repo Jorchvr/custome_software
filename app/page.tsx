@@ -10,6 +10,7 @@ type Project = {
   summary: string;
   features: string[];
   tags: string[];
+  liveUrl?: string;
 };
 
 const projects: Project[] = [
@@ -47,6 +48,7 @@ const projects: Project[] = [
       'Contacto directo por WhatsApp',
     ],
     tags: ['Web informativa', 'Chatbot IA', 'WhatsApp'],
+    liveUrl: 'https://jorchvr.github.io/web_gym/',
   },
   {
     id: 'powergym-hunucma',
@@ -112,6 +114,7 @@ const projects: Project[] = [
       'Contacto directo por WhatsApp y correo',
     ],
     tags: ['Portal inmobiliario', 'Chatbot IA', 'Catálogo dinámico'],
+    liveUrl: 'https://saarq.up.railway.app/',
   },
   {
     id: 'optima',
@@ -129,6 +132,7 @@ const projects: Project[] = [
       'Diseño enfocado en clientes B2B',
     ],
     tags: ['Web corporativa', 'Portafolio', 'Chatbot IA'],
+    liveUrl: 'https://jorchvr.github.io/opsolutionweb-/',
   },
 ];
 
@@ -259,6 +263,16 @@ export default function HomePage() {
                       </span>
                     ))}
                   </div>
+                  {p.liveUrl && (
+                    <a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Visitar sitio →
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

@@ -34,7 +34,11 @@ export default function RootLayout({
 
         <footer className="site-footer">
           <div className="container">
-            © {new Date().getFullYear()} Ravaku. Software hecho a la medida.
+            <span className="founders-label">Fundadores</span>
+            <div className="founders">Jorge Vargas · Miguel Ramos</div>
+            <div className="copyright">
+              © {new Date().getFullYear()} Ravaku. Software hecho a la medida.
+            </div>
           </div>
         </footer>
       </body>

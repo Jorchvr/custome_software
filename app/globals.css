@@ -256,6 +256,24 @@ section { padding: 4rem 0; }
   display: flex; flex-wrap: wrap; gap: 0.35rem;
   margin-top: 1rem;
 }
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  padding: 0.55rem 1rem;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(255, 106, 0, 0.4);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+.project-link:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
 .tag {
   font-size: 0.75rem;
   color: var(--muted);
@@ -326,9 +344,31 @@ section { padding: 4rem 0; }
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 0;
+  padding: 2.5rem 0 2rem;
   color: var(--muted);
   text-align: center;
   font-size: 0.9rem;
   margin-top: 4rem;
+}
+.founders {
+  color: var(--fg);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
+}
+.founders-label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+.copyright {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
 }
