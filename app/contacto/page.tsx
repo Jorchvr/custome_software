@@ -27,11 +27,11 @@ export default function ContactoPage() {
             <h3>WhatsApp</h3>
             <p>
               <a
-                href="https://wa.me/520000000000"
+                href="https://wa.me/528128641405"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +52 000 000 0000
+                +52 812 864 1405
               </a>
             </p>
           </div>
