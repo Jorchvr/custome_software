@@ -1,38 +1,53 @@
 export const metadata = {
-  title: 'Contacto — Sitio Informativo',
+  title: 'Contacto — Ravaku',
 };
 
 export default function ContactoPage() {
   return (
     <section>
       <div className="container">
-        <h2>Contáctanos</h2>
-        <p style={{ marginBottom: '2rem' }}>
-          Estamos disponibles para responder tus dudas. Escríbenos por el medio
-          que prefieras.
-        </p>
+        <div className="section-head">
+          <h2>Contáctanos</h2>
+          <p>
+            Escríbenos y hablemos sobre tu proyecto. Respondemos en horario
+            laboral.
+          </p>
+        </div>
 
         <div className="contact-info">
-          <div className="card">
+          <div className="info-card">
             <h3>Correo</h3>
             <p>
-              <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+              <a href="mailto:serviciosravaku@gmail.com">
+                serviciosravaku@gmail.com
+              </a>
             </p>
           </div>
-          <div className="card">
-            <h3>Teléfono</h3>
+          <div className="info-card">
+            <h3>WhatsApp</h3>
             <p>
-              <a href="tel:+520000000000">+52 000 000 0000</a>
+              <a
+                href="https://wa.me/520000000000"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +52 000 000 0000
+              </a>
             </p>
           </div>
-          <div className="card">
-            <h3>Dirección</h3>
-            <p>Calle Ejemplo 123, Ciudad, País</p>
+          <div className="info-card">
+            <h3>Zonas de trabajo</h3>
+            <p>México — remoto y presencial</p>
           </div>
         </div>
 
         <h3 style={{ marginTop: '2rem' }}>Envíanos un mensaje</h3>
-        <form className="form" action="mailto:contacto@ejemplo.com" method="post" encType="text/plain">
+        <form
+          className="form"
+          action="mailto:serviciosravaku@gmail.com"
+          method="post"
+          encType="text/plain"
+        >
           <div className="field">
             <label htmlFor="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" required />
@@ -40,6 +55,15 @@ export default function ContactoPage() {
           <div className="field">
             <label htmlFor="email">Correo electrónico</label>
             <input id="email" name="email" type="email" required />
+          </div>
+          <div className="field">
+            <label htmlFor="proyecto">¿Qué tipo de proyecto necesitas?</label>
+            <input
+              id="proyecto"
+              name="proyecto"
+              type="text"
+              placeholder="Ej. sistema de gym, sitio web, chatbot..."
+            />
           </div>
           <div className="field">
             <label htmlFor="mensaje">Mensaje</label>

@@ -3,8 +3,9 @@ import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sitio Informativo',
-  description: 'Página informativa y de contacto',
+  title: 'Ravaku — Software personalizado',
+  description:
+    'Desarrollo de software a la medida: gestión de gimnasios, biometría, puntos de venta, sitios web informativos y asistentes chatbot.',
 };
 
 export default function RootLayout({
@@ -18,12 +19,12 @@ export default function RootLayout({
         <header className="site-header">
           <div className="container nav">
             <Link href="/" className="brand">
-              Sitio Informativo
+              <span className="brand-mark">R</span>
+              Ravaku
             </Link>
             <nav className="nav-links">
-              <Link href="/">Inicio</Link>
-              <Link href="/nosotros">Nosotros</Link>
-              <Link href="/servicios">Servicios</Link>
+              <Link href="/#servicios">Servicios</Link>
+              <Link href="/#proyectos">Proyectos</Link>
               <Link href="/contacto">Contacto</Link>
             </nav>
           </div>
@@ -33,7 +34,7 @@ export default function RootLayout({
 
         <footer className="site-footer">
           <div className="container">
-            © {new Date().getFullYear()} Sitio Informativo. Todos los derechos reservados.
+            © {new Date().getFullYear()} Ravaku. Software hecho a la medida.
           </div>
         </footer>
       </body>
