@@ -496,31 +496,18 @@ section { padding: 7rem 0; position: relative; }
 
 .project-media {
   position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--fg);
   aspect-ratio: 16 / 10;
   display: grid;
   place-items: center;
-  padding: 2rem;
   transition: transform 0.5s var(--ease);
-}
-.project-media::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(225,29,29,0.15), transparent 60%);
-  pointer-events: none;
 }
 .project-media img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-  border-radius: var(--radius-sm);
   transition: transform 0.5s var(--ease);
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
 }
-.project:hover .project-media img { transform: scale(1.03); }
+.project:hover .project-media img { transform: scale(1.02); }
 
 .project-index {
   position: absolute;
