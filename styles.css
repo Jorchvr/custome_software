@@ -510,18 +510,16 @@ section { padding: 7rem 0; position: relative; }
 .project:hover .project-media img { transform: scale(1.02); }
 
 .project-index {
-  position: absolute;
-  top: -2.5rem;
-  left: 0;
+  display: block;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
   letter-spacing: -0.05em;
+  margin-bottom: 0.75rem;
   opacity: 0.9;
 }
-.project.reverse .project-index { left: auto; right: 0; text-align: right; }
 
 .project-loc {
   display: inline-flex;
@@ -600,8 +598,7 @@ section { padding: 7rem 0; position: relative; }
   .projects { gap: 5rem; }
   .project, .project.reverse { grid-template-columns: 1fr; gap: 2rem; }
   .project.reverse .project-media { order: 0; }
-  .project-index { position: static; font-size: 3rem; margin-bottom: 1rem; }
-  .project.reverse .project-index { text-align: left; }
+  .project-index { font-size: 2.75rem; }
 }
 
 /* ============================================
